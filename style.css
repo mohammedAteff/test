@@ -1,0 +1,73 @@
+.div1 {
+    width: 100%;
+    height: 950px;
+    background-color: black;
+    position: relative;
+
+}
+
+.div2 {
+    width: 100%;
+    height: 70%;
+    background-color: gray;
+    border-bottom: 20px dashed white;
+}
+
+.div3 {
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    border-bottom: 20px dashed white;
+
+}
+
+.car1 {
+    width: 400px;
+    position: absolute;
+    top: 44%;
+    left: 0px;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.car2 {
+    width: 400px;
+    position: absolute;
+    top: 40%;
+    right: 0;
+    transform: rotatey(180deg);
+    animation-name: main;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    25% {
+        left: 100%;
+    }
+
+    70% {
+        transform: rotatey(180deg);
+    }
+
+    100% {
+        left: -20%;
+    }
+}
+
+@keyframes main {
+
+    25% {
+        right: 100%;
+
+    }
+
+    60% {
+        transform: rotatey(-180deg);
+    }
+
+    100% {
+        right: -20%;
+    }
+}
